@@ -22,8 +22,8 @@ jobs:
 
       - name: Configure Git user
         run: |
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions"
+          git config user.email "jandroav@icloud.com"
+          git config user.name "jandroav"
 
       - name: Prepare and Perform Maven Release
         run: |
