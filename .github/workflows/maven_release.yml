@@ -29,6 +29,5 @@ jobs:
         run: |
           mvn -B release:clean release:prepare release:perform 
         env:
-          GITHUB_TOKEN: ${{ github.token }}
-
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
 
