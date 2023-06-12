@@ -20,6 +20,11 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
 
+      - name: Configure Git user
+        run: |
+          git config user.email "jandroav@icloud.com"
+          git config user.name "jandroav"
+
       - name: Prepare and Perform Maven Release
         run: |
           mvn -B release:clean release:prepare release:perform 
