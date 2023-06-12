@@ -29,7 +29,7 @@
 
         <scm>
             <url>https://github.com/jandroav/maven-release-example</url>
-            <connection>scm:git:https://github.com/jandroav/maven-release-example.git</connection>
+            <connection>scm:git:https://jandroav:${env.BOT_TOKEN}@github.com/jandroav/maven-release-example.git</connection>
         </scm>
 
     
@@ -75,7 +75,7 @@
                 <version>3.0.0-M4</version>
                 <configuration>
                     <username>jandroav</username>
-                    <password>${env.GITHUB_TOKEN}</password>
+                    <password>${env.BOT_TOKEN}</password>
                     <scmCommentPrefix>[ci skip]</scmCommentPrefix>
                 </configuration>
             </plugin>
