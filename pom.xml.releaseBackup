@@ -4,7 +4,7 @@
     <groupId>org.springframework</groupId>
     <artifactId>jv-hello-world-maven</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
 
      <properties>
         <java.version>11</java.version>
@@ -28,23 +28,9 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/jandroav/maven-release-example.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
+    <tag>HEAD</tag>
+  </scm>
 
-    
-    <distributionManagement>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
-        <snapshotRepository>
-            <id>sonatype-nexus-staging</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-    
     <build>
         <plugins>
             <plugin>
@@ -74,7 +60,7 @@
                 <configuration>
                     <username>jandroav</username>
                     <password>${env.BOT_TOKEN}</password>
-                    <scmCommentPrefix>[Version Bumped to Snapshot for Development]</scmCommentPrefix>
+                    <scmCommentPrefix>[ci skip]</scmCommentPrefix>
                 </configuration>
             </plugin>
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-release-plugin -->
