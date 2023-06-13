@@ -72,9 +72,8 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>3.0.0-M4</version>
                 <configuration>
-                    <username>jandroav</username>
-                    <password>${env.BOT_TOKEN}</password>
-                    <scmCommentPrefix>[Version Bumped to Snapshot for Development]</scmCommentPrefix>
+                    <scmCommentPrefix>[Version Bumped to ${project.version}]</scmCommentPrefix>
+                    <tag>v${project.version}</tag>
                 </configuration>
             </plugin>
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-release-plugin -->
