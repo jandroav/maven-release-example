@@ -4,7 +4,7 @@
     <groupId>org.springframework</groupId>
     <artifactId>jv-hello-world-maven</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
 
      <properties>
         <java.version>11</java.version>
@@ -28,7 +28,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/jandroav/maven-release-example.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>jv-hello-world-maven-0.0.2</tag>
   </scm>
 
     <build>
