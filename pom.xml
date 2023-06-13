@@ -4,7 +4,7 @@
     <groupId>org.springframework</groupId>
     <artifactId>jv-hello-world-maven</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.8-SNAPSHOT</version>
+    <version>0.0.6-SNAPSHOT</version>
 
      <properties>
         <java.version>11</java.version>
@@ -72,8 +72,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>3.0.0-M4</version>
                 <configuration>
-                    <scmCommentPrefix>[Version Bumped to ${project.version}</scmCommentPrefix>
-                    <tag>${project.artifactId}-${project.version}</tag>
+                    <scmCommentPrefix>[Version Bumped to ${project.version}]</scmCommentPrefix>
                 </configuration>
             </plugin>
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-release-plugin -->
