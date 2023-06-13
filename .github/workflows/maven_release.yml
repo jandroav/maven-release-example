@@ -2,6 +2,9 @@ name: Maven Release
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Fixed version'
   push:
     branches:
       - main
