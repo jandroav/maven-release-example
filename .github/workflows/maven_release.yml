@@ -27,5 +27,5 @@ jobs:
 
       - name: Prepare and Perform Maven Release
         run: |
-          mvn -B release:clean release:prepare release:perform -Darguments="-Dmaven.javadoc.skip=true -Dmaven.test.skipTests=true -Dmaven.test.skip=true" -Dusername=jandroav -Dpassword=${{ secrets.BOT_TOKEN }}  
+          mvn -B release:clean release:prepare release:perform -Darguments="-Dmaven.javadoc.skip=true -Dmaven.test.skipTests=true -Dmaven.test.skip=true -Dmaven.deploy.skip=true" -Dusername=jandroav -Dpassword=${{ secrets.BOT_TOKEN }}  
 
